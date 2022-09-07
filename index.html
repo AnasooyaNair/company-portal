@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="submit.js"></script>
+  
+  <title>Company Service</title>
+</head>
+<body>
+  <div class="grid-container">
+  <header class="header-container">
+    <div class="show-title">
+      <h1>Service Now</h1>
+      <p> A Service at any time website created by test company</p>
+    </div>
+    <nav id="navbar">
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="partners.html">Partners</a></li>
+        </ul>
+        <ul>
+          <li><a class="aboutus" href="about.html">About Us</a></li></ul>
+    </nav>
+  </header>
+
+  <section id="home-info">
+    <h3> About Company</h3>
+    <h5> Official Company Name :</h5>
+    <p id="company-name"></p>
+    <h5> Commercial Name :</h5>
+    <p id="com-name"></p>
+    <h5> Type of Company:</h5>
+    <p id="company-type"></p>
+    <h5> Service Areas:</h5>
+    <p id="services"></p>
+    <h5> Country of operation:</h5>
+    <p id ="country-of-op"></p>
+    <br>
+    <br>
+    <img class= "sample-img" src="./img/image.jpg" alt="">
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ab voluptate fugit nulla eveniet officia!</p>
+    <br>
+    <h4>More about company</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, deleniti.</p>
+    <div>
+    <img class= "sample-img" src="./img/sample5.jpg" alt="">
+    <img class= "sample-img" src="./img/sample1.jpg" alt="">
+    <img class= "sample-img" src="./img/sample4.jpg" alt="">
+  </div>
+  </section>
+
+  <aside id="input-form" class="container">
+    <div class="container">
+      <form action="index.html">
+        <div class="form-group">
+          <label for="name">Official Company Name :</label>
+          <input type="text" name="name" id="official-name" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Commercial Name :</label>
+          <input type="text" name="name" id="commercial-name" maxlength="100">
+        </div>
+        <div class="form-group">
+          <label for="company">Type of Company:</label>
+          <input type="radio" name="company" id="company" value="Private" checked>Private
+          <input type="radio" name="company" id="company" value="Public">Public
+        </div>
+        <div class="form-group">
+          <label for="services" >Service Areas:</label>
+          <input type="checkbox" name="services" id="myCheck" value="Manufactoring" required>Manufacturing
+          <input type="checkbox" name="services" id="myCheck" value="Outsourcing">Outsourcing
+          <input type="checkbox" name="services" id="myCheck" value="Assembling">Assembling
+          <input type="checkbox" name="services" id="myCheck" value="Imports">Imports
+        </div>
+        <div class="form-group">
+          <label for="country">Country of operation:</label>
+          <select name="country" id="country" value ="country" required>
+            <option value="">Select</option>
+            <option value ="India">India</option>
+            <option value ="Canada">Canada</option>
+            <option value ="UAE">UAE</option>
+            <option value ="Japan">Japan</option>
+            <option value ="Australia">Australia</option>
+            <option value ="UK">UK</option>
+            <option value ="USA">USA</option>
+            <option value ="Bangladesh">Bangladesh</option>
+            <option value ="Malaysia">Malaysia</option>
+            <option value ="Thailand">Thailand</option>
+          </select>
+        </div>
+        <button onclick="return submitForm()" class="submit">Submit</button>
+      </form>
+    </div>
+  </aside>
+
+<footer id="main-footer">
+    <p>Company Portal &copy; 2022, All Rights Reserved</p>
+</footer>
+</body>
+</div>
+</html>
